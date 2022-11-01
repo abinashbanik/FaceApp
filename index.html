@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Face recognition App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body>
+    <header style="text-align:center">Face recognition in the browser using Javascript</header>
+    
+    <div class="container">
+      <video class="feed" id="video" height="500" width="500" autoplay muted></video>
+    </div>
+    <div class="result-container ">
+      <button onclick="promise() ">Start</button>
+      <div  id="emotion">Emotion</div>
+      <div id="gender">Gender</div>
+      <button  id="reload" onclick="reloadPage()">Reload</button>
+      <audio id="sad" src="assets/sad.mp3"></audio>
+      <audio id="neutral" src="assets/neutral.mp3"></audio>
+      <audio id="happy" src="assets/happy.mp3"></audio>
+      <audio id="angry" src="assets/angry.mp3"></audio>
+      <!-- <div id="age">Age</div> -->
+    </div>
+
+    <script src="./js/face-api.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
